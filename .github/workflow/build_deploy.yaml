@@ -3,14 +3,23 @@ name: Build and Deploy
 on:
   push:
     branches:
+<<<<<<< HEAD
       - 'main'
+=======
+      - 'master'
+>>>>>>> c6cd373 (Lesson 34)
       - 'dev_34'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
      - uses: actions/checkout@v4
      - uses: docker/login-action@v3
+=======
+     - uses: actions/checkout@v3
+     - uses: docker/login-action@v2
+>>>>>>> c6cd373 (Lesson 34)
        with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
