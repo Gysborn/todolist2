@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 name: Build and Deploy
 
 on:
@@ -25,5 +22,4 @@ jobs:
           target: prod_image
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/todolist:latest
->>>>>>> deee0f7 (Lesson 34_1)
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/todolist:Lesson 34_1
